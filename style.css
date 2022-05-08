@@ -343,7 +343,7 @@ footer {
     align-items: center;
 }
 
-.sm-icons-footer {
+.sm-icons-footer a {
     filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
 }
 
