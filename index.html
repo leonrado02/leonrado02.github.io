@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/favicon.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;800&family=Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <h2 class="title">&lt;front-end web development/&gt;</h2>
+        <img src="icons/menu.svg" alt="" class="menu-icon">
+    </header>
+
+    <div class="dropdown-menu">
+        <nav class="dropdown">
+
+            <ul class="nav">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+            </ul>
+
+            <img src="icons/close.svg" alt="" class="close-icon">
+        </nav>
+    </div>
+
+    <!-- card -->
+    <section class="profile-card">
+        <div class="card-image">
+            <img src="images/profile.jpg" alt="Picture of Me">
+        </div>
+
+        <div class="card-text">
+            <div class="card-text-info">
+                <h3>Leon Rado</h3>
+                <p>web designer</p>
+            </div>
+            
+            <div class="sm-icons">
+                <a href="https://www.facebook.com/profile.php?id=100006690168512"><img src="icons/facebook.svg" alt="Facebook Icon"></a>
+                <a href="https://github.com/leonrado02"><img src="icons/github.svg" alt="Github Icon"></a>
+                <a href="https://www.fiverr.com/leonrado_?"><img src="icons/fiverr.svg" alt="Fiverr Icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section class="section__main about-me" id="about-me">
+        <h1 class="section__title about-me-title">Something About Me</h1>
+        <article>
+            <p>
+                I am a young man from Europe whose passion is designing websites.
+                I have completed many courses and projects and taken a lot of practise to improve my skills in this field.
+            </p>
+            <p>
+                Currently I’m preparing for my studies at a university focused on information technologies.
+                In the near future I plan to learn various frontend frameworks such as Tailwind or React.
+            </p>
+        </article>
+    </section>
+
+    <!-- services -->
+    <section class="section__main services" id="services">
+        <h1 class="section__title services-title">Services I Provide</h1>
+        
+        <div class="services-container">
+            <div class="service creating">
+                <img src="images/programming.svg" alt="Coding Website">
+                <h2>Custom Website</h2>
+                <p> 
+                    Created with newest technologies and followed by newest trends, 
+                    that adapts to every screen size and changes based on the action user make.
+                </p>
+            </div>
+
+            <div class="service converting">
+                <img src="images/converting.svg" alt="Converting to Website">
+                <h2>Design to HTML</h2>
+                <p>
+                    Conversion of your design created in any software (Photoshop, Adobe XD, Figma) 
+                    into a real functional website.
+                </p>
+            </div>
+
+            <div class="service fixing">
+                <img src="images/repairing.svg" alt="Reapiring website">
+                <h2>Fixing Errors</h2>
+                <p>
+                    Fixing any syntax or logic error in HTML and CSS 
+                    (unclosed elements, badly nested elements, layout problems...).
+                </p>
+            </div>
+        </div>
+
+        <div class="btn-container"> 
+            <a href="https://www.fiverr.com/leonrado_?"><span class="btn">Learn More</span></a> 
+        </div>
+    </section>
+
+    <!-- technologies -->
+    <section class="section__main technologies" id="technologies">
+        <h1 class="section__title technologies-title">Technologies I Use</h1>
+
+        <div class="technologies-all">
+
+            <div class="technology html">
+                <div class="logo-name">
+                    <img src="icons/HTML.png" alt="HTML Logo">
+                    <h3>HTML5</h3>
+                </div>
+                <p class="description">To structure a webpage and its content</p>
+            </div>
+
+            <div class="technology css">
+                <div class="logo-name">
+                    <img src="icons/CSS3.png" alt="CSS Logo">
+                    <h3>CSS3</h3>
+                </div>
+                <p class="description">To style and layout a webpage</p>
+            </div>
+
+            <div class="technology js">
+                <div class="logo-name">
+                    <img src="icons/JS.png" alt="Javascript Logo">
+                    <h3>JavaScript</h3>
+                </div>
+                <p class="description">To create dynamic and interactive web content</p>
+            </div>
+
+            <div class="technology ps">
+                <div class="logo-name">
+                    <img src="icons/PS.png" alt="Photoshop Logo">
+                    <h3>Photoshop</h3>
+                </div>
+                <p class="description">To edit images used on a webpage</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <span class="footer-info">Leon Rado 2022</span>
+            <div class="sm-icons sm-icons-footer">
+                <a href="https://www.facebook.com/profile.php?id=100006690168512"><img src="icons/facebook.svg" alt="Facebook Icon"></a>
+                <a href="https://github.com/leonrado02"><img src="icons/github.svg" alt="Github Icon"></a>
+                <a href="https://www.fiverr.com/leonrado_?"><img src="icons/fiverr.svg" alt="Fiverr Icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
