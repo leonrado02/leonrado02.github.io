@@ -242,7 +242,7 @@ header {
 
 .service h2 {
     font-size: var(--fs-subtitle);
-    margin-bottom: 0.5rem;
+    margin-right: 1rem;
 }
 
 .btn-container {
@@ -266,6 +266,35 @@ header {
 .btn-container a:visited {
     text-decoration: none;
     color: currentColor;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer-active {
+    max-height: 100vh;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    transform: rotate(90deg);
+    color: #761515;
+}
+
+.question-active .arrow {
+    transform: rotate(270deg);
 }
 
 /* technologies */
@@ -522,13 +551,23 @@ media queries
 .menu-icon,
 .close-icon,
 .dropdown-menu,
-.btn {
+.btn,
+.arrow {
     transition: var(--transition-slow);
 }
 
 .nav a,
-.sm-icons img {
+.sm-icons img,
+.question {
     transition: var(--transition-fast);
+}
+
+.answer {
+    transition: max-height 0.75s ease;
+}
+
+.answer-active {
+    transition: max-height 2.25s ease;
 }
 
 @keyframes loadanimation {
@@ -559,6 +598,11 @@ media queries
 .btn:active {
     color: black;
     background-color: var(--dark-beige);
+}
+
+.question:hover,
+.question:active {
+    opacity: 0.70;
 }
 
 @media (min-width: 750px) {
